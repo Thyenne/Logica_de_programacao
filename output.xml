@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-08-21T11:45:22.836831" rpa="true" schemaversion="5">
+<suite id="s1" name="Dicionario" source="E:\Estudo\Curso IQS\lógica de programação\dicionario.robot">
+<test id="s1-t1" name="Exemplo Dicionário:" line="8">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>VALOR: ${VALOR}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T11:45:22.858684" elapsed="0.000200"/>
+</kw>
+<var name="${valor}">chave1</var>
+<status status="PASS" start="2025-08-21T11:45:22.858323" elapsed="0.000613"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>VALOR: ${VALOR}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T11:45:22.859066" elapsed="0.000150"/>
+</kw>
+<var name="${valor}">chave2</var>
+<status status="PASS" start="2025-08-21T11:45:22.859010" elapsed="0.000241"/>
+</iter>
+<var>${valor}</var>
+<value>@{DICIONARIO}</value>
+<status status="PASS" start="2025-08-21T11:45:22.858137" elapsed="0.001134"/>
+</for>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>valor do item 1: ${DICIONARIO.chave1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-08-21T11:45:22.859434" elapsed="0.000407"/>
+</kw>
+<status status="PASS" start="2025-08-21T11:45:22.857876" elapsed="0.002080"/>
+</test>
+<status status="PASS" start="2025-08-21T11:45:22.837986" elapsed="0.022336"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Dicionario" id="s1" pass="1" fail="0" skip="0">Dicionario</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
